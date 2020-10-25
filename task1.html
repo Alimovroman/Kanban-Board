@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task1</title>
+  <meta charset="utf-8">
+  <link href="task1.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="heading">
+      Awesome Kanban Board
+    </div>
+    <div class="toolbar">
+    <button class="button_create_new_list">
+      <img src="images/plus.svg" alt="plus">
+      Create new list
+    </button>
+      <div class="user_info">
+        <div class="avatar">
+          <img src="images/avatar.svg" alt="avatar">
+        </div>
+        <div>
+          <button class="profile_button">></button>
+        </div>
+        <div class="profile_menu">
+          <div class="empty_square"></div>
+          <ul class="profile_ul">
+            <li class="profile_li">
+              <button class="menu_profile_button">Profile</button>
+            </li>
+            <li class="profile_li">
+              <button class="menu_profile_button">Log Out</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="task_wrapper">
+      <div class="task_block">
+        <div class="header_task_list">
+          <p class ="heading_task_block">Backlog</p>
+          <button class="button_tasklist_menu">...</button>
+        </div>
+        <ul class="task_list" id="backlog_ul_id">
+          <li class="task_list_li">Login page – performance issues </li>
+          <li class="task_list_li">Sprint bugfix</li>
+        </ul>
+        <button class="add_card_button">+ Add Card</button>
+      </div>
+    </div>
+    <div class="task_wrapper">
+      <div class="task_block">
+        <div class="header_task_list">
+          <p class ="heading_task_block">Ready</p>
+          <button class="button_tasklist_menu">...</button>
+        </div>
+        <ul class="task_list" id="ready_ul_id">
+        </ul>
+        <button class="add_card_button">+ Add Card</button>
+      </div>
+    </div>
+    <div class="task_wrapper">
+      <div class="task_block">
+        <div class="header_task_list">
+          <p class ="heading_task_block">In Progress</p>
+          <button class="button_tasklist_menu">...</button>
+        </div>
+        <ul class="task_list" id="inprogres_ul_id">
+        </ul>
+        <button class="add_card_button">+ Add Card</button>
+      </div>
+    </div>
+    <div class="task_wrapper">
+      <div class="task_block">
+        <div class="header_task_list">
+          <p class ="heading_task_block">Finished</p>
+          <button class="button_tasklist_menu">...</button>
+        </div>
+        <ul class="task_list" id="finished_ul_id">
+        </ul>
+        <button class="add_card_button">+ Add Card</button>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer_task">
+      <div class="activ_task">
+      </div>
+      <div class="finished_tasks">
+      </div>
+    </div>
+    <div class="footer_name">
+      Kanban board by &lt;ROMAN&gt;, &lt;2020&gt;
+    </div>
+  </footer>
+  <script src="task1.js">
+
+  </script>
+</body>
+</html>
